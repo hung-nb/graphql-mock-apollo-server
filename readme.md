@@ -7,9 +7,19 @@ $ node index.js
 ```
 http://localhost:4000/
 ```
-- Test default one graphQL query
+
+### Test graphQL queries
 ```
 {
   hello
+}
+```
+or
+```
+{
+  books {
+    title
+    author
+  }
 }
 ```
