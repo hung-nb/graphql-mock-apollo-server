@@ -6,6 +6,7 @@
   "author": "Hung Nguyen",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "apollo-server": "^2.9.12"
+  },
+  "devDependencies": {}
 }

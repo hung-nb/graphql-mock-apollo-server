@@ -5,5 +5,11 @@ $ node index.js
 ```
 - Open browser
 ```
-http://localhost:3000
+http://localhost:4000/
+```
+- Test default one graphQL query
+```
+{
+  hello
+}
 ```

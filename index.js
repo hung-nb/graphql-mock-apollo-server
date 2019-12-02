@@ -1,4 +1,16 @@
-const express = require('express')
-const app = express()
-app.get('/', (req, res) => res.send('Hello World!'))
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+const { ApolloServer, gql } = require('apollo-server');
+
+const typeDefs = gql`
+  type Query {
+    hello: String
+  }
+`;
+
+const server = new ApolloServer({
+  typeDefs,
+  mocks: true,
+});
+
+server.listen().then(({ url }) => {
+  console.log(`🚀 Server ready at ${url}`)
+});
